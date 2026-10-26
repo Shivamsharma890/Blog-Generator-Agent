@@ -1,0 +1,8 @@
+langchain
+langchain-groq
+langchain-community
+langgraph
+pydantic
+fastapi[standard]
+python-dotenv
+langgraph-checkpoint-sqlite
