@@ -1,8 +1,8 @@
-# BlogCraft AI — Agentic Blog Generator
+## 🤖 BlogCraft AI — Agentic Blog Generator
 
 BlogCraft AI is an AI-powered blog-writing workspace built with **React, Tailwind CSS, FastAPI, LangGraph, LangChain, and Groq**. It guides a blog through research, human review, drafting, another human review, and final editing.
 
-> **Workflow:** Research Agent → Human Research Review → Writer Agent → Human Draft Review → Editor Agent → Final Blog
+> **Workflow :** Research Agent → Human Research Review → Writer Agent → Human Draft Review → Editor Agent → Final Blog
 
 ## Features
 
@@ -27,8 +27,7 @@ BlogCraft AI is an AI-powered blog-writing workspace built with **React, Tailwin
 BlogCraft-AI/
 ├── frontend/
 │   ├── src/
-│   │   ├── assets/
-│   │   │   └── logo.png
+│   │   ├── assets
 │   │   ├── components/
 │   │   │   ├── BlogForm.jsx
 │   │   │   └── BlogReview.jsx
@@ -36,14 +35,14 @@ BlogCraft-AI/
 │   │   ├── main.jsx
 │   │   └── index.css
 │   ├── package.json
-│   └── .env
 └── backend/
     ├── Agents.py
     ├── Graph.py
     ├── State.py
     ├── user.py
     ├── .env
-    └── Blog.sqlite
+    ├── Blog.sqlite
+    └── requirements.txt
 ```
 
 Adapt folder names and file names to match your repository. The frontend structure assumes `App.jsx` imports `./components/BlogForm` and `./components/BlogReview`.
@@ -68,7 +67,7 @@ Create and activate a virtual environment.
 
 ```powershell
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate
 ```
 
 If activation is blocked, use Command Prompt:
@@ -87,19 +86,13 @@ source .venv/bin/activate
 Install dependencies:
 
 ```bash
-pip install fastapi "uvicorn[standard]" langgraph langgraph-checkpoint-sqlite langchain-core langchain-groq python-dotenv
-```
-
-If your repository has a `requirements.txt`, use:
-
-```bash
 pip install -r requirements.txt
 ```
 
 Create `backend/.env`:
 
 ```env
-GROQ_API_KEY=your_groq_api_key_here
+GROQ_API_KEY = your_groq_api_key_here...
 ```
 
 Replace the placeholder with your own key. Never commit `.env` or expose the key in frontend code.
