@@ -1,4 +1,4 @@
-## 🤖 BlogCraft AI — Agentic Blog Generator
+### 🤖 BlogCraft AI — Agentic Blog Generator
 
 BlogCraft AI is an AI-powered blog-writing workspace built with **React, Tailwind CSS, FastAPI, LangGraph, LangChain, and Groq**. It guides a blog through research, human review, drafting, another human review, and final editing.
 
