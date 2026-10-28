@@ -4,6 +4,7 @@ BlogCraft AI is an AI-powered blog-writing workspace built with **React, Tailwin
 
 > **Workflow :** Research Agent → Human Research Review → Writer Agent → Human Draft Review → Editor Agent → Final Blog
 
+
 ## Features
 
 - Generate a research outline for a topic and target audience.
